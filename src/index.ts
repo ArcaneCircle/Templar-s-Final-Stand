@@ -1,3 +1,4 @@
+import "webxdc-scores";
 import { GameLoop, init } from "kontra";
 import {
   INFO_PANEL_HEIGHT,
@@ -51,4 +52,5 @@ const loop = GameLoop({
     gameStartDialog.render();
   },
 });
-loop.start();
+
+window.highscores.init().then(() => loop.start());

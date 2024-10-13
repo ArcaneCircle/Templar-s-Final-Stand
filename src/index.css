@@ -1,0 +1,17 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  touch-action: none;
+  margin: 0;
+}
+
+#c {
+  background: #ecddba;
+}

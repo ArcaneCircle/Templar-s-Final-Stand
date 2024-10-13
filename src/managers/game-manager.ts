@@ -126,6 +126,7 @@ export class GameManager {
   public gameOver() {
     if (this.state === GameState.GAME_OVER) return;
     this.state = GameState.GAME_OVER;
+    window.highscores.setScore(this.move);
     this.music?.stop();
     zzfx(...negativeSFX);
     emit(EVENT.GAME_OVER);
