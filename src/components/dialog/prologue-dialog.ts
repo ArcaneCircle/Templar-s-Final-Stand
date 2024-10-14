@@ -45,10 +45,9 @@ export class PrologueDialog extends OverlayDialog {
         lineHeight: 1.5,
         x: canvas.width / 2,
         y: canvas.height / 2 + i * (last ? 60 : 30),
-        opacity: 0,
+        opacity: 1,
       });
       this.addChild(content);
-      tween(content, { opacity: 1 }, this.isClicked && !last ? 0 : 500);
     }
     this.tapCallback = this.onTapStart.bind(this);
     canvas.addEventListener("pointerdown", this.tapCallback);
