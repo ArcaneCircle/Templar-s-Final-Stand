@@ -1,4 +1,4 @@
-import "webxdc-scores";
+import "@webxdc/highscores"
 import { GameLoop, init } from "kontra";
 import {
   INFO_PANEL_HEIGHT,
